@@ -95,13 +95,13 @@ size_t pr_liststr(const list_t *h)
 }
 
 /**
- * remove_node_index - deletes node at given index
+ * removenode_index - deletes node at given index
  * @head: address of pointer to first node
  * @index: index of node to delete
  *
  * Return: 1 on success, 0 on failure
  */
-int remove_node_index(list_t **head, unsigned int index)
+int removenode_index(list_t **head, unsigned int index)
 {
 	list_t *node, *prev_node;
 	unsigned int i = 0;

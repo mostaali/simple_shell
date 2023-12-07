@@ -97,7 +97,7 @@ int history_re(info_t *info)
 	free(buf);
 	info->histcount = linecount;
 	while (info->histcount-- >= HIST_MAX)
-		remove_node_index(&(info->history), 0);
+		removenode_index(&(info->history), 0);
 	savehistory(info);
 	return (info->histcount);
 }

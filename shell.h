@@ -215,10 +215,10 @@ int savehistory(info_t *info);
 list_t *add_node(list_t **, const char *, int);
 list_t *add_node_end(list_t **, const char *, int);
 size_t pr_liststr(const list_t *);
-int removenode__index(list_t **, unsigned int);
+int removenode_index(list_t **, unsigned int);
 void clean_list(list_t **);
 
-/* str_list_function.c module */
+/* str_list_len_function.c module */
 size_t listlen(const list_t *);
 char **list_to_strings(list_t *);
 size_t print_the_list(const list_t *);
